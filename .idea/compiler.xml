@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="00-rewards-common" />
+        <module name="00-rewards-db" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="00-rewards-common" target="1.5" />
+      <module name="00-rewards-db" target="1.5" />
       <module name="rewards" target="1.5" />
     </bytecodeTargetLevel>
   </component>

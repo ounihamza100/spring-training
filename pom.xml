@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>00-rewards-common</module>
+        <module>00-rewards-db</module>
     </modules>
     <packaging>pom</packaging>
 

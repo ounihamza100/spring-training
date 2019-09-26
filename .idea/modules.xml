@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../rewards/00-rewards-common/00-rewards-common.iml" filepath="$PROJECT_DIR$/../rewards/00-rewards-common/00-rewards-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rewards/00-rewards-db/00-rewards-db.iml" filepath="$PROJECT_DIR$/../rewards/00-rewards-db/00-rewards-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/rewards.iml" filepath="$PROJECT_DIR$/rewards.iml" />
     </modules>
   </component>
