@@ -10,6 +10,7 @@
     <modules>
         <module>00-rewards-common</module>
         <module>00-rewards-db</module>
+        <module>01-spring-intro</module>
     </modules>
     <packaging>pom</packaging>
 
