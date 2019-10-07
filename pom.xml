@@ -11,6 +11,7 @@
         <module>00-rewards-common</module>
         <module>00-rewards-db</module>
         <module>01-spring-intro</module>
+        <module>02-javaconfig-dependency-injection</module>
     </modules>
     <packaging>pom</packaging>
 
