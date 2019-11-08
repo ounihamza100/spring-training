@@ -59,7 +59,7 @@ public class JdbcRestaurantRepository implements RestaurantRepository {
 	 * table. Cached restaurants are indexed by their merchant numbers. This method is called on initialization.
 	 */
 	@PostConstruct
-	void populateRestaurantCache() {
+	public void populateRestaurantCache() {
 		logger.info("Loading restaurant cache");
 		restaurantCache = new HashMap<String, Restaurant>();
 		String sql = "select MERCHANT_NUMBER, NAME, BENEFIT_PERCENTAGE from T_RESTAURANT";
@@ -122,7 +122,7 @@ public class JdbcRestaurantRepository implements RestaurantRepository {
 	 * Helper method that clears the cache of restaurants.  This method is called on destruction
 	 */
 	@PreDestroy
-	void clearRestaurantCache() {
+	public void clearRestaurantCache() {
 		logger.info("Clearing restaurant cache");
 		restaurantCache.clear();
 	}

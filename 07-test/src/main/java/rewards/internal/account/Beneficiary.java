@@ -38,7 +38,7 @@ public class Beneficiary extends Entity {
 	 * @param allocationPercentage the beneficiary's allocation percentage within its account
 	 * @param savings the total amount saved to-date for this beneficiary
 	 */
-	Beneficiary(String name, Percentage allocationPercentage, MonetaryAmount savings) {
+	public Beneficiary(String name, Percentage allocationPercentage, MonetaryAmount savings) {
 		this.name = name;
 		this.allocationPercentage = allocationPercentage;
 		this.savings = savings;
