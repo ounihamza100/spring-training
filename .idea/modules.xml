@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/../rewards/00-rewards-db/00-rewards-db.iml" filepath="$PROJECT_DIR$/../rewards/00-rewards-db/00-rewards-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rewards/01-spring-intro/01-spring-intro.iml" filepath="$PROJECT_DIR$/../rewards/01-spring-intro/01-spring-intro.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rewards/02-javaconfig-dependency-injection/02-javaconfig-dependency-injection.iml" filepath="$PROJECT_DIR$/../rewards/02-javaconfig-dependency-injection/02-javaconfig-dependency-injection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rewards/04-annotations/04-annotations.iml" filepath="$PROJECT_DIR$/../rewards/04-annotations/04-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rewards/07-test/07-test.iml" filepath="$PROJECT_DIR$/../rewards/07-test/07-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rewards/rewards.iml" filepath="$PROJECT_DIR$/../rewards/rewards.iml" />
     </modules>
   </component>
