@@ -1,4 +1,4 @@
-package rewards.internal;
+package internal;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package rewards.internal.account;
+package account;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -10,13 +10,14 @@ import org.junit.jupiter.api.Test;
 import common.money.MonetaryAmount;
 import common.money.Percentage;
 import rewards.AccountContribution;
+import rewards.internal.account.Account;
 
 /**
  * Unit tests for the Account class that verify Account behavior works in isolation.
  */
 public class AccountTests {
 
-	private Account account = new Account("1", "Keith and Keri Donald");
+	private rewards.internal.account.Account account = new Account("1", "Keith and Keri Donald");
 
 	@Test
 	public void accountIsValid() {

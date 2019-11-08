@@ -1,4 +1,4 @@
-package rewards.internal.reward;
+package internal.reward;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -20,6 +20,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 
 import common.money.MonetaryAmount;
 import common.money.Percentage;
+import rewards.internal.reward.JdbcRewardRepository;
 
 /**
  * Tests the JDBC reward repository with a test data source to verify data access and relational-to-object mapping
@@ -27,7 +28,7 @@ import common.money.Percentage;
  */
 public class JdbcRewardRepositoryTests {
 
-	private JdbcRewardRepository repository;
+	private rewards.internal.reward.JdbcRewardRepository repository;
 
 	private DataSource dataSource;
 

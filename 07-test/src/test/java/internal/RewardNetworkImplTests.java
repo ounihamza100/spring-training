@@ -1,4 +1,4 @@
-package rewards.internal;
+package internal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -12,6 +12,7 @@ import common.money.MonetaryAmount;
 import rewards.AccountContribution;
 import rewards.Dining;
 import rewards.RewardConfirmation;
+import rewards.internal.RewardNetworkImpl;
 import rewards.internal.account.AccountRepository;
 import rewards.internal.restaurant.RestaurantRepository;
 import rewards.internal.reward.RewardRepository;
@@ -28,7 +29,7 @@ public class RewardNetworkImplTests {
 	/**
 	 * The object being tested.
 	 */
-	private RewardNetworkImpl rewardNetwork;
+	private rewards.internal.RewardNetworkImpl rewardNetwork;
 
 	@BeforeEach
 	public void setUp() throws Exception {

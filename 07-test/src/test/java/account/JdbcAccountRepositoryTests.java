@@ -1,4 +1,4 @@
-package rewards.internal.account;
+package account;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -17,6 +17,9 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 
 import common.money.MonetaryAmount;
 import common.money.Percentage;
+import rewards.internal.account.Account;
+import rewards.internal.account.Beneficiary;
+import rewards.internal.account.JdbcAccountRepository;
 
 /**
  * Tests the JDBC account repository with a test data source to verify data access and relational-to-object mapping
@@ -24,7 +27,7 @@ import common.money.Percentage;
  */
 public class JdbcAccountRepositoryTests {
 
-	private JdbcAccountRepository repository;
+	private rewards.internal.account.JdbcAccountRepository repository;
 
 	private DataSource dataSource;
 
@@ -37,7 +40,7 @@ public class JdbcAccountRepositoryTests {
 
 	@Test
 	public void testFindAccountByCreditCard() {
-		Account account = repository.findByCreditCard("1234123412341234");
+		rewards.internal.account.Account account = repository.findByCreditCard("1234123412341234");
 		// assert the returned account contains what you expect given the state of the database
 		assertNotNull(account, "account should never be null");
 		assertEquals(Long.valueOf(0), account.getEntityId(), "wrong entity id");
@@ -45,7 +48,7 @@ public class JdbcAccountRepositoryTests {
 		assertEquals("Keith and Keri Donald", account.getName(), "wrong name");
 		assertEquals(2, account.getBeneficiaries().size(), "wrong beneficiary collection size");
 
-		Beneficiary b1 = account.getBeneficiary("Annabelle");
+		rewards.internal.account.Beneficiary b1 = account.getBeneficiary("Annabelle");
 		assertNotNull(b1, "Annabelle should be a beneficiary");
 		assertEquals(MonetaryAmount.valueOf("0.00"), b1.getSavings(), "wrong savings");
 		assertEquals(Percentage.valueOf("50%"), b1.getAllocationPercentage(), "wrong allocation percentage");
