@@ -14,6 +14,7 @@
         <module>02-javaconfig-dependency-injection</module>
         <module>04-annotations</module>
         <module>07-test</module>
+        <module>15-mvc</module>
     </modules>
     <packaging>pom</packaging>
 
